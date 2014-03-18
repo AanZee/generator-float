@@ -10,7 +10,7 @@ describe('Float generator test', function () {
         return done(err);
       }
 
-      this.webapp = helpers.createGenerator('gulp-webapp:app', [
+      this.webapp = helpers.createGenerator('float:app', [
         '../../app', [
           helpers.createDummyGenerator(),
           'mocha:app'
