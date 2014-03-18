@@ -152,7 +152,7 @@ AppGenerator.prototype.app = function app() {
 	this.mkdir('app/styles');
 	this.mkdir('app/images');
 	this.write('app/index.html', this.indexFile);
-	this.write('app/scripts/app.js', 'console.log(\'\\\'Allo \\\'Allo!\');');
+	this.write('app/scripts/app.js', 'console.log(\'Welcome to Float!\');');
 };
 
 AppGenerator.prototype.install = function () {
