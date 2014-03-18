@@ -32,12 +32,9 @@ describe('Float generator test', function () {
       'bower.json',
       'package.json',
       'gulpfile.js',
-      'app/404.html',
-      'app/favicon.ico',
-      'app/robots.txt',
       'app/index.html',
-      'app/scripts/main.js',
-      'app/styles/main.scss'
+      'app/scripts/app.js',
+      'app/styles/style.scss'
     ];
 
     helpers.mockPrompt(this.webapp, {
