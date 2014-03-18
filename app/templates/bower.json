@@ -1,0 +1,10 @@
+{
+  "name": "<%= _.slugify(appname) %>",
+  "private": true,
+  "dependencies": {
+    "float": "git://github.com/AanZee/float.git",
+    "jquery": "~1.11.0",
+    "jquery": "~2.1.0"
+  },
+  "devDependencies": {}
+}
