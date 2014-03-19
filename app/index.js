@@ -74,14 +74,23 @@ AppGenerator.prototype.askFor = function askFor() {
 	},{
 		type: 'list',
 		when: function (response) {
-			return response.features.indexOf('iconfont');
+			return response.features.indexOf('iconfont') !== -1;
 		},
 		name: 'whichIconFont',
 		message: 'Which icon font do you want to include?',
 		choices: [
-			"Font Awesome",
-			"Foundicons",
-			"Icomoon"
+			{
+				name: "Font Awesome",
+				value: "font-awesome"
+			}, 
+			{
+				name: "Foundicons",
+				value: "foundicons"
+			},
+			{
+				name: "Icomoon",
+				value: "icomoon"
+			}
 		]
 	}];
 
