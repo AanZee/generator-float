@@ -37,8 +37,12 @@ AppGenerator.prototype.askFor = function askFor() {
 
 	// welcome message
 	if (!this.options['skip-welcome-message']) {
-		console.log(this.yeoman);
-		console.log(chalk.blue('Hi, I install the Float Framework!'));
+		console.log(chalk.red('            _~       '));
+		console.log(chalk.red('         _~)_) _~    '));
+		console.log(chalk.red('        )_))_))_)    '));
+		console.log(chalk.yellow('        _!__!__!_    '));
+		console.log(chalk.cyan('~~~~~~~~') + chalk.yellow('\\_____') + chalk.white('t') + chalk.yellow('_/') + chalk.cyan('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~') + chalk.cyan(' FLOAT ') + chalk.cyan('~~~~~~~~'));
+		console.log(chalk.red("Ahoy! You wanna be a real pirate!? Answer the next questions and you're in!"));
 	}
 
 	var prompts = [{
