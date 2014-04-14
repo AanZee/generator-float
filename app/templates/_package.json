@@ -16,6 +16,7 @@
     "gulp-connect": "~1.0.0",
     "gulp-useref": "~0.1.2",
     "gulp-bundle": "~0.2.0",
+    "gulp-stylestats": "~0.1.4",
     "wiredep": "~1.1.0"
   },
   "engines": {
