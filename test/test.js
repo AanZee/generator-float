@@ -37,9 +37,9 @@ describe('Float generator test', function () {
       'app/styles/style.scss'
     ];
 
-    helpers.mockPrompt(this.webapp, {
+    /*helpers.mockPrompt(this.webapp, {
       features: ['includeSass']
-    });
+    });*/
 
     this.webapp.run({}, function () {
       helpers.assertFile(expected);
