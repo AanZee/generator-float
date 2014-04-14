@@ -87,10 +87,6 @@ AppGenerator.prototype.askFor = function askFor() {
 			{
 				name: "Foundicons",
 				value: "foundicons"
-			},
-			{
-				name: "Icomoon",
-				value: "icomoon"
 			}
 		]
 	}];
