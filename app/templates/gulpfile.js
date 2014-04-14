@@ -22,7 +22,7 @@ gulp.task('styles', function () {
 });
 
 gulp.task('stylestats', function () {
-	gulp.src('app/styles/**/*.css').pipe(stylestats());
+	return gulp.src('app/styles/**/*.css').pipe(stylestats());
 });
 
 // Scripts
