@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8"> 
     
-    <title><% siteName %></title>
+    <title><%= siteName %></title>
     <meta name="description" content="Dit is een lege template" />
 
     <!-- Site info -->
@@ -31,20 +31,14 @@
     <!--[if gt IE 8]><!-->
         <link rel="stylesheet" href="/css/style.css">
     <![endif]-->
-    <% if (includeModernizr) { %>
+
+    <% if (includeFeature('modernizr')) { %>
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
     <% } %>
 </head>
 <body>
-    
-
-    <!-- jQuery and main functions -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="/js/jquery-1.10.1.min.js"><\/script>')</script>
-    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-    <script>window.jQuery || document.write('<script src="/js/jquery-ui.min.js"><\/script>')</script>
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->

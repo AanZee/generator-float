@@ -3,6 +3,7 @@
 
 var gulp = require('gulp');
 var wiredep = require('wiredep').stream;
+var googlecdn = require('gulp-google-cdn');
 
 // Load plugins
 var $ = require('gulp-load-plugins')();
@@ -31,6 +32,7 @@ gulp.task('scripts', function () {
 gulp.task('html', function () {
     return gulp.src('app/*.html')
       .pipe($.useref())
+      .pipe(googlecdn(require('./bower.json')))
       .pipe(gulp.dest('dist'))
       .pipe($.size());
 });
