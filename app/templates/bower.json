@@ -5,7 +5,7 @@
     "float": "git://github.com/AanZee/float.git",
     "jquery": "~1.11.0",
     "jquery": "~2.1.0"<% if (includeFeature('bourbon')) { %>,
-    "bourbon" "~4.0.0"<% } %>
+    "bourbon": "~4.0.0"<% } %>
   },
   "devDependencies": {}
 }
