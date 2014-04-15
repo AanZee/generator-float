@@ -38,7 +38,8 @@ describe('Float generator test', function () {
     ];
 
     helpers.mockPrompt(this.webapp, {
-      features: ['includeBourbon']
+      features: ['includeBourbon'],
+      siteName: 'testsite'
     });
 
     this.webapp.run({}, function () {
