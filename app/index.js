@@ -70,6 +70,10 @@ AppGenerator.prototype.askFor = function askFor() {
 			{
 				name: "Icon font",
 				value: "iconfont"
+			},
+			{
+				name: "Web font",
+				value: "webfont"
 			}
 		]
 	},{
@@ -87,6 +91,19 @@ AppGenerator.prototype.askFor = function askFor() {
 			{
 				name: "Foundicons",
 				value: "foundicons"
+			}
+		]
+	},{
+		type: 'list',
+		when: function (response) {
+			return response.features.indexOf('webfont') !== -1;
+		},
+		name: 'whichWebFont',
+		message: 'Which web font do you want to include?',
+		choices: [
+			{
+				name: "Open Sans",
+				value: "open-sans"
 			}
 		]
 	}];
